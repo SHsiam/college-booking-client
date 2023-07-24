@@ -36,7 +36,7 @@ import MyCollege from "../Pages/MyCollege/MyCollege";
         {
           path:'/college/:id',
           element:<Details></Details> ,
-          loader: ({params}) => fetch(`http://localhost:5000/college/${params.id}`)
+          loader: ({params}) => fetch(`https://college-booking-server-mdshiam4-gmailcom.vercel.app/college/${params.id}`)
         },
         {
           path:'/event',

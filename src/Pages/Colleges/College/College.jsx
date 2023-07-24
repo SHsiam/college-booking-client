@@ -5,7 +5,7 @@ import CollegeCard from "./CollegeCard";
 const College = () => {
     const [colleges,setColleges]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/college')
+        fetch('https://college-booking-server-mdshiam4-gmailcom.vercel.app/college')
         .then(res=>res.json())
         .then(data=>setColleges(data));
     },[])
