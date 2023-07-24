@@ -13,6 +13,7 @@ import Admission from "../Pages/Admission/Admission";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import PrivateRoute from "./PrivateRoute";
 
+
   const router = createBrowserRouter([
     {
       path: "/",
