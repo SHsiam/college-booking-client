@@ -11,6 +11,7 @@ import Event from "../Pages/Colleges/Details/Event/Event";
 import AdmissionProcess from "../Pages/Colleges/Details/AdmissionProcess/AdmissionProcess";
 import Admission from "../Pages/Admission/Admission";
 import MyCollege from "../Pages/MyCollege/MyCollege";
+import PrivateRoute from "./PrivateRoute";
 
   const router = createBrowserRouter([
     {
@@ -54,7 +55,7 @@ import MyCollege from "../Pages/MyCollege/MyCollege";
         },
         {
           path:'/mycollege',
-          element:<MyCollege></MyCollege>
+          element:<PrivateRoute><MyCollege></MyCollege></PrivateRoute>
         }
       ]
     },
